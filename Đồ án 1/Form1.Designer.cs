@@ -1,4 +1,4 @@
-﻿namespace Đồ_án_1
+namespace Đồ_án_1
 {
     partial class Form1
     {
@@ -35,6 +35,7 @@
             this.Doc = new System.Windows.Forms.Button();
             this.Luu = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DanhSach = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -54,6 +55,7 @@
             this.Them.TabIndex = 1;
             this.Them.Text = "Thêm";
             this.Them.UseVisualStyleBackColor = true;
+            this.Them.Click += new System.EventHandler(this.Them_Click);
             // 
             // Xoa
             // 
@@ -63,6 +65,7 @@
             this.Xoa.TabIndex = 2;
             this.Xoa.Text = "Xóa";
             this.Xoa.UseVisualStyleBackColor = true;
+            this.Xoa.Click += new System.EventHandler(this.Xoa_Click);
             // 
             // Sua
             // 
@@ -72,6 +75,7 @@
             this.Sua.TabIndex = 3;
             this.Sua.Text = "Sửa";
             this.Sua.UseVisualStyleBackColor = true;
+            this.Sua.Click += new System.EventHandler(this.Sua_Click);
             // 
             // Doc
             // 
@@ -91,19 +95,32 @@
             this.Luu.TabIndex = 6;
             this.Luu.Text = "Lưu";
             this.Luu.UseVisualStyleBackColor = true;
+            this.Luu.Click += new System.EventHandler(this.Luu_Click);
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(78, 75);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(403, 20);
+            this.textBox1.Size = new System.Drawing.Size(403, 331);
             this.textBox1.TabIndex = 7;
+            // 
+            // DanhSach
+            // 
+            this.DanhSach.Location = new System.Drawing.Point(540, 365);
+            this.DanhSach.Name = "DanhSach";
+            this.DanhSach.Size = new System.Drawing.Size(68, 41);
+            this.DanhSach.TabIndex = 8;
+            this.DanhSach.Text = "Xuất dữ liệu";
+            this.DanhSach.UseVisualStyleBackColor = true;
+            this.DanhSach.Click += new System.EventHandler(this.DanhSach_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.DanhSach);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Luu);
             this.Controls.Add(this.Doc);
@@ -128,6 +145,7 @@
         private System.Windows.Forms.Button Doc;
         private System.Windows.Forms.Button Luu;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button DanhSach;
     }
 }
 
