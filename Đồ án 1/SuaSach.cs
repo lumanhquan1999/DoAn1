@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +12,8 @@ namespace Đồ_án_1
 {
     public partial class SuaSach : Form
     {
-        public string masach, tensach, loaisach, dongia;
+        public string masach, tensach, loaisach;
+        public int dongia;
         public SACH Std = new SACH();
         public SuaSach()
         {
@@ -24,7 +25,7 @@ namespace Đồ_án_1
             masach = textBox1.Text;
             tensach = textBox2.Text;
             loaisach = textBox3.Text;
-            dongia = textBox4.Text;
+            dongia = Convert.ToInt32(textBox4.Text);
             
             Std.Nhap(masach, tensach, loaisach, dongia);
             this.Close();
