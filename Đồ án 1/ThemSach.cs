@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,7 +23,7 @@ namespace Đồ_án_1
         {
             if (tMaSach.Text.CompareTo("") == 0) ktThem = 1;
             else
-                temp.Nhap(tMaSach.Text, tTenSach.Text, tLoaiSach.Text, tDonGia.Text);
+                temp.Nhap(tMaSach.Text, tTenSach.Text, tLoaiSach.Text, Convert.ToInt32(tDonGia.Text));
             this.Close();
         }
     }
